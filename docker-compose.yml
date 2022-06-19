@@ -1,7 +1,7 @@
 version: '3'
 services:
   frontend:
-    image: "node:latest"
+    build: ./
     working_dir: /usr/src/app
     environment:
       - NODE_ENV=production
