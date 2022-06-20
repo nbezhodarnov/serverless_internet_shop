@@ -9,6 +9,24 @@
   margin-bottom: 1rem;
 }
 
+.basket-mask {
+  visibility: hidden;
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+#basket {
+  overflow-y: auto;
+  background: white;
+  width: 50%;
+  height: 50vh;
+  margin: 10% auto;
+}
+
 .header a {
   color: #fff;
   text-decoration: none;
