@@ -1,0 +1,11 @@
+version: '3'
+services:
+  frontend:
+    build: ./
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    command: "npm start"
