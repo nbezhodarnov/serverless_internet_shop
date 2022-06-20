@@ -3,6 +3,8 @@ FROM node:latest
 # создание директории приложения
 WORKDIR /usr/src/app
 
+RUN npm install -g parcel-bundler
+
 # установка зависимостей
 # символ астериск ("*") используется для того чтобы по возможности
 # скопировать оба файла: package.json и package-lock.json
@@ -16,4 +18,3 @@ RUN npm install
 COPY . .
 
 EXPOSE 8081
-RUN npm start
