@@ -47,16 +47,4 @@ search.addWidgets([
   }),
 ]);
 
-// search.setSettings({
-//   searchableAttributes: [
-//     'id',
-//     'title,alternative_title',
-//     'author',
-//     'unordered(text)',
-//     'emails.personal'
-//   ]
-// }).then(() => {
-//   // done
-// });
-
 search.start();
